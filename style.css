@@ -74,7 +74,7 @@ body {
   background-color: #fff;
   width: min(90vw, 350px);
   border-radius: 1.5rem;
-  box-shadow: 0 10px 24px -5px var(--very-dark-desaturated-blue);
+  box-shadow: 0 40px 100px -40px var(--very-dark-desaturated-blue);
 }
 
 .card-header-img {
