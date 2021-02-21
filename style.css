@@ -1,0 +1,116 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-desaturated-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 70%);
+  --dark-slight-gray: hsl(0, 0%, 90%);
+  --font-name-stats: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Attribution */
+
+.attribution {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* style text */
+.text {
+  color: var(--very-dark-desaturated-blue);
+  font-size: var(--font-name-stats);
+  font-weight: 500;
+}
+
+.text.dark-grey {
+  color: var(--dark-desaturated-blue);
+}
+
+.text.bold {
+  font-weight: 700;
+}
+
+.text.medium {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.text.small {
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  width: min(90vw, 350px);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 24px -5px var(--very-dark-desaturated-blue);
+}
+
+.card-header-img {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: min(90vw, 350px);
+}
+
+.card-avatar {
+  position: relative;
+  bottom: 50px;
+  border: 0.4rem solid white;
+  border-radius: 50%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-body div {
+  margin-top: -2.75rem;
+}
+
+.card-body div :nth-child(1) {
+  margin-right: 0.3rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-top: 0.075rem solid var(--dark-slight-gray);
+  padding: 1.5rem 0 1.4rem;
+  line-height: 1.25rem;
+}
